@@ -156,6 +156,13 @@ feature:     feat/cart --
 - Products requiring extensive testing cycles
 - Teams that need feature isolation
 
+- In Git Flow:
+
+•  main: Production-ready code only. Tagged with version numbers. Receives merges only from release branches and hotfix branches. Should always be stable and deployable.
+•  develop: Integration branch for features. Contains the latest development changes. Used as the base for feature branches and receives completed features via pull requests. May be less stable than main.
+
+The key difference: main is for releases, develop is for active development. Features are merged into develop, and when ready for release, develop is merged into main via a release branch.
+
 ---
 
 ## GitHub Flow
@@ -388,5 +395,6 @@ The choice of branching strategy should align with:
 - **Quality assurance needs**
 - **Deployment infrastructure**
 - **Risk tolerance**
+
 
 Understanding these strategies and their trade-offs demonstrates DevOps maturity and practical git knowledge essential for modern software development teams.
